@@ -40,10 +40,19 @@ header p, footer, h1 {
     color: #F9FAF8;
 }
 
-header li, .hero p {
+header li, .hero p, a {
     color: #E5E7EB;
     font-size: 18px;
     list-style-type: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3c3f3d;
+}
+
+a:visited {
+    color: #99a0ad;
 }
 
 .hero p {
