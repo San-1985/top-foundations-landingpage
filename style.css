@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
+}
+
+li {
+    display: inline;
+    padding-left: 25px;
 }
 
 h1 {
@@ -10,6 +19,8 @@ h1 {
 h2 {
     font-size: 36px;
     font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 header, footer, .hero {
@@ -20,6 +31,11 @@ blockquote, h2 {
     color: #1F2937;
 }
 
+figcaption {
+    font-weight: bold;
+    text-align: right;
+}
+
 header p, footer, h1 {
     color: #F9FAF8;
 }
@@ -27,6 +43,11 @@ header p, footer, h1 {
 header li, .hero p {
     color: #E5E7EB;
     font-size: 18px;
+    list-style-type: none;
+}
+
+.hero p {
+    margin: 30px 0px;
 }
 
 header p {
@@ -37,10 +58,19 @@ header p {
 figure {
     background-color: #E5E7EB;
     margin: 0;
+    padding: 50px 25%;
 }
 
-header li {
-    font-size: 18px;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+.hero {
+    padding: 50px 10%;
+    display: flex;
+    gap: 50px;
 }
 
 blockquote {
@@ -52,11 +82,65 @@ blockquote {
 
 button, .call {
     background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    color: #F9FAF8;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.call {
+    margin: 50px 10%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.call button {
+    border: 2px solid #F9FAF8;
 }
 
 .pic {
     width: 200px;
     height: 200px;
-    border-color: #3882F6;
-    border: 1px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card-text {
+    max-width: 200px;
+    text-align: center;
+}
+
+.cards {
+    padding: 30px 0 70px 0;
+}
+
+.placeholder {
+    background-color: grey;
+    height: 250px;
+    width: 1000px;
+    color:#F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
